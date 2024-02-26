@@ -1,0 +1,12 @@
+# Node.js
+node_modules/
+
+# Chrome Extension
+*.crx
+*.pem
+
+# Build output
+/dist/
+
+# Mac
+.DS_Store

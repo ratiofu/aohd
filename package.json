@@ -1,0 +1,22 @@
+{
+  "name": "@ratiofu/aohd",
+  "version": "0.0.1",
+  "description": "Amazon Order History Downloader",
+  "keywords": [
+    "amazon",
+    "order",
+    "history",
+    "download",
+    "export",
+    "csv",
+    "tsv"
+  ],
+  "main": "./src/background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": { "name": "TJ", "email": "aohd@thomasjung.com", "url": "https://thomasjung.com" },
+  "license": "MIT",
+  "repository": "github:ratiofu/aohd"
+}

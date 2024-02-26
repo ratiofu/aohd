@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Amazon Order History Download</title>
+        <style>
+            :root {
+                --primary-color: #ff9900;
+                --secondary-color: #232f3e;
+                --tertiary-color: #f0f0f0;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 17px;
+            }
+            .nowrap {
+                white-space: nowrap;
+            }
+            h1 {
+                color: var(--primary-color);
+                font-size: 1.6em;
+            }
+            li {
+                margin-bottom: 0.4em;
+            }
+            a {
+                text-decoration: none;
+            }
+            a:hover, a:active, a:focus {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="nowrap">Amazon Order History Download</h1>
+        <select id="yearSelect"></select>
+        <button id="getOrderNumbersButton">Get Order Numbers</button>
+        <button id="parseOrderDetailButton">Parse Order Detail</button>
+        <p id="orderPageInstructions">
+            <a target="_blank" href="https://www.amazon.com/your-orders/orders">Go to your Amazon orders</a>
+        </p>
+        <p>
+            <button id="obtainMissingOrderDetails">Obtain Missing Order Details</button>
+        </p>
+        <p>
+            <button id="copyOrdersToClipboard">Copy Known Orders to Clipboard</button>
+        </p>
+        <div id="knownOrdersList"></div>
+        <script type="module" src="popupScript.js"></script>
+    </body>
+</html>

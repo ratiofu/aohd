@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Amazon Order History Download",
+    "version": "1.0",
+    "description": "Download your Amazon order history.",
+    "permissions": [
+      "activeTab",
+      "tabs",
+      "storage",
+      "scripting"
+    ],
+    "host_permissions": [
+      "*://*.amazon.com/*"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js", "type": "module"
+    },
+    "minimum_chrome_version": "92",
+    "content_scripts": [{
+      "matches": ["*://*.amazon.com/*"],
+      "js": ["content.js"]
+    }],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+  }
+  
